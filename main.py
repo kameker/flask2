@@ -26,7 +26,6 @@ def load_photo():
         image = b64encode(bytes).decode('utf-8')
         with open("static/img/picture.txt", "w") as f:
             f.write(image)
-            f.close()
         return render_template('load.html', title='Отбор астронавтов', image=image)
 
 
